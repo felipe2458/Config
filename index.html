@@ -1,43 +1,45 @@
-<!DOCTYPE html>
+<!DO class="opitions"CTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Configurações</title>
+    <title>Configurações aprimorada</title>
 </head>
 <body>
     <div id="config" class="config" style="background-color: darkred; width: 0px;">
-        <h1 class="tituloConfig" style="color: black;">Configurações</h1>
+        <h1>Configurações</h1>
 
-        <h4 class="tituloConfig" style="color: black;">Cor da tela:</h4>
-        <div id="button" class="button" style="background-color: rgb(58, 53, 53);">
-            <h5 style="color: whitesmoke;">Escuro</h5>
-            <div id="circle" class="circle" style="margin-left: 0px; background-color: wheat;"></div>
+        <h4>Cor da tela:</h4>
+        <div id="button" class="button" style="background-color: rgb(48, 44, 44);">
+            <h5 id="padrao" style="color: whitesmoke;">Padrão</h5>
+            <div id="circle" class="circle" style="background-color: wheat; margin-left: 0px;"></div>
         </div><!--button-->
 
-        <h4 class="tituloConfig" style="color: black;">Alterar texto:</h4>
-        <div id="button1" class="button" style="background-color: rgb(58, 53, 53);">
-            <h5 style="color: whitesmoke;">Lorem</h5>
-            <div id="circle1" class="circle" style="margin-left: 0px; background-color: wheat;"></div>
+        <h4  id="textoTela" style="top: 78px;">Texto na tela:</h4>
+        <div id="button1" class="button" style="background-color: rgb(48, 44, 44); top: 70px; transition: 1s;">
+            <h5 id="loremTroca" style="color: whitesmoke;">Lorem</h5>
+            <div id="circle1" class="circle" style="background-color: wheat; margin-left: 0px;"></div>
         </div><!--button1-->
 
-        <h4 class="tituloConfig" style="color: black;">Retirar texto:</h4>
-        <div id="button2" class="button" style="background-color: rgb(58, 53, 53);">
-            <h5 style="color: whitesmoke;">Com</h5>
-            <div id="circle2" class="circle" style="margin-left: 0px; background-color: wheat;"></div>
+        <h4  id="com" style="top: 108px;">Remover Texto:</h4>
+        <div id="button2" class="button" style="background-color: rgb(48, 44, 44); top: 100px; transition: 1s;">
+            <h5 id="Remocao" style="color: whitesmoke;">Com</h5>
+            <div id="circle2" class="circle" style="background-color: wheat; margin-left: 0px;"></div>
         </div><!--button2-->
-        
+
+        <div id="selecionarCor" class="selecionarCor"></div>
     </div><!--config-->
 
-    <div id="conteudo" class="conteudo" style="background-color: rgb(39, 37, 37); width: 100%;">
-        <div title="Configurações" id="abriConfig" class="abriConfig"></div>
+    <div id="conteudo" class="conteudo" style="width: 100%; background-color: rgb(44, 41, 41);">
+        <div id="abriConfig" class="abriConfig"></div>
 
-        <div id="container-texto" class="container-texto">
-            <h1 class="texto">Lorem</h1>
-            <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in velit maximus sem imperdiet eleifend id id dolor. Maecenas interdum interdum odio et condimentum. Fusce elementum dictum feugiat. Cras id magna placerat, vehicula massa non, semper leo. Quisque pulvinar, nisl quis hendrerit rhoncus, nisi massa maximus purus, non dignissim metus erat in mauris. Sed non pharetra lacus, in interdum ligula. Cras vel faucibus dui. Aliquam vestibulum tempus vestibulum. Etiam auctor tortor eu leo rhoncus molestie. Vivamus cursus tristique facilisis. Nullam bibendum hendrerit magna, et volutpat mi lacinia ac. Duis varius nibh venenatis mauris dictum sodales. Integer vel libero nulla. Maecenas in neque nec est molestie dignissim. Donec scelerisque auctor finibus.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse lobortis, neque nec consequat dapibus, enim magna imperdiet nunc, convallis volutpat eros nisl eget neque. Praesent mattis arcu sit amet justo pellentesque tincidunt. Mauris lacinia lectus vel dolor molestie, a luctus lorem finibus. Donec a ex tellus. Morbi sit amet sollicitudin leo, in interdum felis. Curabitur nec risus nulla. Nunc non nisi dignissim quam sollicitudin sollicitudin. Curabitur condimentum quis nibh id varius. Nam sed euismod libero. Morbi imperdiet nulla nec nibh ornare congue. Praesent vitae bibendum sapien.</p>
+        <div id="texto" class="texto" style="color: whitesmoke;">
+            <h1>Lorem</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tempus ipsum. Sed vulputate, lacus et molestie volutpat, massa lorem sollicitudin diam, eu ornare ante enim at erat. Maecenas dapibus viverra justo, id ornare eros facilisis et. In felis sem, porta id dui ac, bibendum suscipit risus. Cras vulputate finibus augue et sodales. Donec dapibus, ex vitae sollicitudin pharetra, sem metus tristique ipsum, ut tempor justo mi volutpat nisl. Fusce nec volutpat augue, eget accumsan sem.Praesent eget massa erat. Donec sit amet tempus tellus. Etiam justo lacus, rhoncus at malesuada at, iaculis id nunc. Integer vulputate lacus non volutpat bibendum. Quisque feugiat interdum urna ut rhoncus. Integer sit amet egestas ligula, eget mollis nisi. Mauris euismod sagittis molestie. Praesent non dui eleifend, facilisis eros sit amet, interdum justo. Proin ultricies ac diam vel venenatis. Nulla rutrum bibendum libero sit amet bibendum. Nulla euismod nulla a dictum faucibus.Aliquam vitae tortor sapien. In non consequat dui, eget rutrum lorem. Morbi quis nunc fermentum, interdum augue sed, auctor purus. Aenean ut lacus placerat, scelerisque nisi vel, sollicitudin ex. Aliquam pulvinar orci quis velit tincidunt, in lobortis tellus convallis. Donec rutrum ultricies commodo. Nam orci neque, fermentum eu massa in, faucibus rhoncus enim. In consequat nulla ut magna elementum iaculis.</p>
         </div>
-    </div>
+    </div><!--conteudo-->
 </body>
 <script src="SCRIPT/script.js"></script>
 </html>

@@ -1,20 +1,42 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Minha fonte";
-}
-
-@font-face {
-    font-family: "Minha fonte";
-    src: url(../Fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
 }
 
 html,body{
     height: 100%;
-    background: linear-gradient(59deg,green,blue);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+}
+
+.conteudo{
+    height: 100%;
+    float: left;
+    transition: 1s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.conteudo > .texto{
+    width: 500px;
+    height: 400px;
+    cursor: default;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -65%);
+}
+
+.texto > h1{
+    text-align: center;
+    padding: 0 0 15px 0;
+    transition: 1s;
+}
+
+.texto > p{
+    text-align: justify;
+    padding: 0 20px;
+    transition: 1s;
 }
 
 .abriConfig{
@@ -22,99 +44,320 @@ html,body{
     height: 30px;
     background-image: url(../Images/settings-glyph-black-icon-png_293809-removebg-preview\ \(1\).png);
     background-size: 30px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 20px;
+    top: 20px;
     cursor: pointer;
-    margin: 20px;
+    transition: 0.3s;
 }
 
-.conteudo{
-    height: 100%;
-    float: left;
-    transition: 1s;
-}
-
-.conteudo > .container-texto{
-    width: 500px;
-    height: 400px;
-    margin: 0 auto;
-}
-
-.container-texto > h1{
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.container-texto > p{
-    text-align: justify;
-    padding: 0 20px;
-}
-
-.texto{
-    color: whitesmoke;
-    transition: s;
+.abriConfig:hover{
+    filter: drop-shadow(1px 1px 8px rgb(0, 255, 13));
 }
 
 .config{
     height: 100%;
-    transition: s;
-    float: left;
     overflow: hidden;
+    float: left;
     position: relative;
-    cursor: default;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
     transition: 1s;
 }
 
 .config > h1{
-    position: absolute;
-    left: 40px;
-    top: 30px;
+    margin: 0 50px;
+    position: relative;
+    top: 20px;
 }
 
 .config > h4{
-    position: absolute;
+    position: relative;
+    min-width: 81.46px !important;
+    float: left;
+    top: 50px;
     left: 10px;
-    top: 115px;
-    min-width: 100px;
+    cursor: default;
 }
 
 .config > h4:nth-of-type(2){
-    top: 180px;
     font-size: 14px;
+    position: relative;
+    z-index: 1;
 }
 
 .config > h4:nth-of-type(3){
-    top: 240px;
-    font-size: 14px;
+    font-size: 12px;
+    position: relative;
+    z-index: 1;
 }
 
 .config > .button{
     width: 100px;
     height: 30px;
     position: relative;
-    top: 110px;
-    left: 100px;
+    top: 45px;
+    left: 95px;
     border-radius: 100px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .config > .button:nth-of-type(2){
-    top: 145px;
+    z-index: 1;
 }
 
 .config > .button:nth-of-type(3){
-    top: 175px;
-}
-
-.button > h5{
-    position: absolute;
-    left: 33px;
-    top: 6px;
-    transition: 0.2s;
+    z-index: 1;
 }
 
 .button > .circle{
     width: 30px;
     height: 30px;
-    border-radius: 100px;
     transition: 0.2s;
+    border-radius: 100px;
+    position: relative;
+}
+
+.button > h5{
+    position: absolute;
+    left: 32px;
+    top: 8px;
+    transition: 1s;
+}
+
+input[type="color"] {
+    border: 3px solid whitesmoke;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+.selecionarCor{
+    height: 130px;
+    width: 260px;
+    position: relative;
+    margin-left: 11px;
+}
+
+.selecionarCor > .opitions{
+    position: relative;
+    top: 10px;
+    float: left;
+}
+
+.opitions:nth-of-type(1){
+    margin-left: 30px;
+}
+
+.opitions:nth-of-type(2),.opitions:nth-of-type(3){
+    margin-left: 20px;
+}
+
+.selecionarCor > h4{
+    position: absolute;
+    top: 50px;
+    cursor: default;
+}
+
+.container-predefinido{
+    width: 45px;
+    height: 25px;
+    float: left;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    border: 3px solid whitesmoke;
+    cursor: pointer;
+}
+
+.predefinido{
+    width: 15px;
+    height: 100%;
+}
+
+.container-predefinido:nth-of-type(2),.container-predefinido:nth-of-type(3){
+    margin-left: 20px;
+}
+
+.container-predefinido:nth-of-type(1){
+    background-color: rgb(228, 228, 228);
+}
+
+.container-predefinido:nth-of-type(1) > .predefinido{
+    background-color: rgb(20, 160, 202);
+}
+
+.container-predefinido:nth-of-type(2){
+    background-color: rgb(184, 115, 51);
+}
+
+.container-predefinido:nth-of-type(2) > .predefinido{
+    background-color: rgb(33, 77, 25);
+}
+
+.container-predefinido:nth-of-type(3){
+    animation-name: animacao-conteudo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: 1s;
+}
+
+.container-predefinido:nth-of-type(3) > .predefinido{
+    animation-name: animacao-config;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: 1s;
+}
+
+@keyframes animacao-conteudo{
+    0%{
+        background-color: blue;
+    }
+
+    10%{
+        background-color: red;
+    }
+
+    20%{
+        background-color: blueviolet;
+    }
+
+    30%{
+        background-color: green;
+    }
+
+    40%{
+        background-color: yellow;
+    }
+
+    50%{
+        background-color: crimson;
+    }
+
+    60%{
+        background-color: cyan;
+    }
+
+    70%{
+        background-color: deeppink;
+    }
+
+    80%{
+        background-color: gold;
+    }
+
+    90%{
+        background-color: indigo;
+    }
+
+    100%{
+        background-color: blue;
+    }
+}
+
+@keyframes animacao-config{
+    0%{
+        background-color: red;
+    }
+
+    10%{
+        background-color: blue;
+    }
+
+    20%{
+        background-color: green;
+    }
+
+    30%{
+        background-color: yellow;
+    }
+
+    40%{
+        background-color: crimson;
+    }
+
+    50%{
+        background-color: cyan;
+    }
+
+    60%{
+        background-color: deeppink;
+    }
+
+    70%{
+        background-color: blueviolet;
+    }
+
+    80%{
+        background-color: indigo;
+    }
+
+    90%{
+        background-color: darkgoldenrod;
+    }
+
+    100%{
+        background-color: red;
+    }
+}
+
+@keyframes animacao-texto{
+    0%{
+        color: red;
+    }
+
+    10%{
+        color: blueviolet;
+    }
+
+    20%{
+        color: green;
+    }
+
+    30%{
+        color: yellow;
+    }
+
+    40%{
+        color: cyan;
+    }
+
+    50%{
+        color: goldenrod;
+    }
+
+    60%{
+        color: darkred;
+    }
+
+    70%{
+        color: aquamarine;
+    }
+
+    80%{
+        color: olive;
+    }
+
+    90%{
+        color: peru;
+    }
+
+    100%{
+        color: red;
+    }
 }
