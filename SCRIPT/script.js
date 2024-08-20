@@ -1,7 +1,15 @@
-let abrirConfig = document.getElementById('abrirConfig');
-let conteudo = document.getElementById('conteudo');
-let config = document.getElementById('config');
-let texto = document.getElementById('texto');
+const abrirConfig = document.getElementById('abrirConfig');
+const conteudo = document.getElementById('conteudo');
+const config = document.getElementById('config');
+const button = document.getElementById('button');
+const button1 = document.getElementById('button1');
+const button2 = document.getElementById('button2');
+const circle = document.getElementById('circle');
+const circle1 = document.getElementById('circle1');
+const circle2 = document.getElementById('circle2');
+const h5_1 = document.getElementById('h5-1');
+const h5_2 = document.getElementById('h5-2');
+const h5_3 = document.getElementById('h5-3');
 
 document.addEventListener('keydown',(event)=>{
     {// INICIO DA ABERTURA DAS CONFIGURAÇÕES COM O ESC
@@ -29,133 +37,117 @@ abrirConfig.addEventListener('click',()=>{
     }// FIM DA ABERTURA DAS CONFIGURAÇÕES 
 });
 
-let button = document.getElementById('button');
-let circle = document.getElementById('circle');
+function ButtonTroca(BT,CL,H5,h5TextInicio,h5TextFim){
+    {// INICIO DA TROCA DE COR DO BUTTON, ANIMAÇÃO DO CIRCLO E TROCA DO TEXTO DO H5 
+        if(CL.style.marginLeft == "0px"){
+            BT.style.backgroundColor = "rgb(199, 190, 190)";
+            CL.style.marginLeft = "70px";
+            H5.style.color = "black";
+            H5.innerText = h5TextInicio;
+        }else{
+            BT.style.backgroundColor = "rgb(44, 44, 44)";
+            CL.style.marginLeft = "0px";
+            H5.style.color = "whitesmoke";
+            H5.innerText = h5TextFim;
+        }
+    }// FIM DA TROCA DE COR DO BUTTON, ANIMAÇÃO DO CIRCLO E TROCA DO TEXTO DO H5
+}
 
 button.addEventListener('click',()=>{
-    {// INICIO DA TROCA DE COR DO BUTTON, ANIMAÇÃO DO CIRCLO E TROCA DE PADRÃO POR OUTRO 
-        let padrao = button.querySelector('h5');
+    {// INICIO DA TROCA DE COR DO BUTTON, ANIMAÇÃO DO CIRCLO E TROCA DO TEXTO DO H5
+        ButtonTroca(button,circle,h5_1,"Outro","Padrão");
+    }// FIM DA TROCA DE COR DO BUTTON, ANIMAÇÃO DO CIRCLO E TROCA DO TEXTO DO H5
 
-        if(circle.style.marginLeft == "0px"){
-            button.style.backgroundColor = "rgb(199, 190, 190)";
-            circle.style.marginLeft = "70px";
-            padrao.innerHTML = "Outro";
-            padrao.style.color = "black";
-        }else{
-            button.style.backgroundColor = "rgb(44, 44, 44)";
-            circle.style.marginLeft = "0px";
-            padrao.innerHTML = "Padrão";
-            padrao.style.color = "whitesmoke";
-        }
-    }// FIM DA TROCA DE COR DO BUTTON, ANIMAÇÃO DO CIRCLO E TROCA DE PADRÃO POR OUTRO 
-
-    {// INICIO DA ADIÇÃO DOS INUTS COM O TIPO COLOR E DOS PREDEFINIDOS 
-        let selecionarCor = document.getElementById('selecionarCor');
-        let h4 = document.getElementById('troca');;
-
-        if(selecionarCor.innerHTML == ""){
-            selecionarCor.innerHTML = `<input title="Cor das Configurações" id="corConfig" class="cores" type="color" value="#8B0000">
-            <input title="Cor do Coteúdo" id="corConteudo" class="cores" type="color" value="#2C2C2C">
-            <input title="Cor do Texto" id="corTexto" class="cores" type="color" value="#F5F5F5">
-
-            <h4>Pre definidos:</h4>
-
-            <div id="cor1" title="Verde folha e Cor de Corbre" class="container-pre"><div class="pre"></div></div>
-            <div id="cor2" title="Violeta Elétrico e Rosa Choque" class="container-pre"><div class="pre"></div></div>
-            <div id="cor3" title="Azul Cobalto e Cor de Prata" class="container-pre"><div class="pre"></div></div>`;
-            selecionarCor.style.height = "150px";
-            h4.style.marginTop = "27px";
-        }else{
-            selecionarCor.innerHTML = "";
-            selecionarCor.style.height = "0px";
-            h4.style.marginTop = "17px";
-        }
-    }// FIM DA ADIÇÃO DOS INUTS COM O TIPO COLOR E DOS PREDEFINIDOS 
-
-    {// INICIO DA TROCA DE COR DO CONTEUDO, DAS CONFIGURAÇÕES E DO TEXTO COM OS INPUTS E COM AS DIVS
-        let cor1 = document.getElementById('cor1');
-        let cor2 = document.getElementById('cor2');
-        let cor3 = document.getElementById('cor3');
-
-        if(circle.style.marginLeft == "70px"){
-            cor1.addEventListener('click',()=>{
-                corConfig.value = "#4CAF50";
-                corConteudo.value = "#B87333";
-                corTexto.value = "#000000";
-                config.style.backgroundColor = "#4CAF50";
-                conteudo.style.backgroundColor = "#B87333";
-                texto.style.color = "#000000";
+        {// INICIO DA ADIÇÃO DOS INUTS COM O TIPO COLOR E DOS PREDEFINIDOS 
+            let selecionarCor = document.getElementById('selecionarCor');
+            let h4 = document.getElementById('troca');;
+    
+            if(selecionarCor.innerHTML == ""){
+                selecionarCor.innerHTML = `<input title="Cor das Configurações" id="corConfig" class="cores" type="color" value="#8B0000">
+                <input title="Cor do Coteúdo" id="corConteudo" class="cores" type="color" value="#2C2C2C">
+                <input title="Cor do Texto" id="corTexto" class="cores" type="color" value="#F5F5F5">
+    
+                <h4>Pre definidos:</h4>
+    
+                <div id="cor1" title="Verde folha e Cor de Corbre" class="container-pre"><div class="pre"></div></div>
+                <div id="cor2" title="Violeta Elétrico e Rosa Choque" class="container-pre"><div class="pre"></div></div>
+                <div id="cor3" title="Azul Cobalto e Cor de Prata" class="container-pre"><div class="pre"></div></div>`;
+                selecionarCor.style.height = "150px";
+                h4.style.marginTop = "27px";
+            }else{
+                selecionarCor.innerHTML = "";
+                selecionarCor.style.height = "0px";
+                h4.style.marginTop = "17px";
+            }
+        }// FIM DA ADIÇÃO DOS INUTS COM O TIPO COLOR E DOS PREDEFINIDOS 
+    
+        {// INICIO DA TROCA DE COR DO CONTEUDO, DAS CONFIGURAÇÕES E DO TEXTO COM OS INPUTS E COM AS DIVS
+            let cor1 = document.getElementById('cor1');
+            let cor2 = document.getElementById('cor2');
+            let cor3 = document.getElementById('cor3');
+    
+            if(circle.style.marginLeft == "70px"){
+                cor1.addEventListener('click',()=>{
+                    corConfig.value = "#4CAF50";
+                    corConteudo.value = "#B87333";
+                    corTexto.value = "#000000";
+                    config.style.backgroundColor = "#4CAF50";
+                    conteudo.style.backgroundColor = "#B87333";
+                    texto.style.color = "#000000";
+                });
+    
+                cor2.addEventListener('click',()=>{
+                    corConfig.value = "#d52dff";
+                    corConteudo.value = "#FF007F";
+                    corTexto.value = "#F5F5F5";
+                    config.style.backgroundColor = "#d52dff";
+                    conteudo.style.backgroundColor = "#FF007F";
+                    texto.style.color = "#F5F5F5";
+                });
+    
+                cor3.addEventListener('click',()=>{
+                    corConfig.value = "#2986dd";
+                    corConteudo.value = "#C0C0C0";
+                    corTexto.value = "#000000";
+                    config.style.backgroundColor = "#2986dd";
+                    conteudo.style.backgroundColor = "#C0C0C0";
+                    texto.style.color = "#000000";
+                });
+    
+            let corConfig = document.getElementById('corConfig');
+            let corConteudo = document.getElementById('corConteudo');
+            let corTexto = document.getElementById('corTexto');
+    
+            corConfig.addEventListener('input',()=>{
+                config.style.backgroundColor = corConfig.value;
             });
-
-            cor2.addEventListener('click',()=>{
-                corConfig.value = "#d52dff";
-                corConteudo.value = "#FF007F";
-                corTexto.value = "#F5F5F5";
-                config.style.backgroundColor = "#d52dff";
-                conteudo.style.backgroundColor = "#FF007F";
-                texto.style.color = "#F5F5F5";
+    
+            corConteudo.addEventListener('input',()=>{
+                conteudo.style.backgroundColor = corConteudo.value;
             });
-
-            cor3.addEventListener('click',()=>{
-                corConfig.value = "#2986dd";
-                corConteudo.value = "#C0C0C0";
-                corTexto.value = "#000000";
-                config.style.backgroundColor = "#2986dd";
-                conteudo.style.backgroundColor = "#C0C0C0";
-                texto.style.color = "#000000";
+    
+            corTexto.addEventListener('input',()=>{
+                texto.style.color = corTexto.value;
             });
-
-        let corConfig = document.getElementById('corConfig');
-        let corConteudo = document.getElementById('corConteudo');
-        let corTexto = document.getElementById('corTexto');
-
-        corConfig.addEventListener('input',()=>{
-            config.style.backgroundColor = corConfig.value;
-        });
-
-        corConteudo.addEventListener('input',()=>{
-            conteudo.style.backgroundColor = corConteudo.value;
-        });
-
-        corTexto.addEventListener('input',()=>{
-            texto.style.color = corTexto.value;
-        });
-        }
-
-        if(circle.style.marginLeft == "0px"){
-            config.style.backgroundColor = "darkred";
-            conteudo.style.backgroundColor = "rgb(44, 44, 44)";
-            texto.style.color = "whitesmoke";
-        }
-
-    }// FIM DA TROCA DE COR DO CONTEUDO, DAS CONFIGURAÇÕES E DO TEXTO COM OS INPUTS E COM AS DIVS
-});// FIM DO BUTTON
-
-
-let button1 = document.getElementById('button1');
-let circle1 = document.getElementById('circle1');
+            }
+    
+            if(circle.style.marginLeft == "0px"){
+                config.style.backgroundColor = "darkred";
+                conteudo.style.backgroundColor = "rgb(44, 44, 44)";
+                texto.style.color = "whitesmoke";
+            }
+    
+        }// FIM DA TROCA DE COR DO CONTEUDO, DAS CONFIGURAÇÕES E DO TEXTO COM OS INPUTS E COM AS DIVS
+});
 
 button1.addEventListener('click',()=>{
     {// INICIO DA TROCA DE COR DO BUTTON, ANIMAÇÃO DO CIRCLO E TROCA DE LOREM POR CHAT 
-        let troca = button1.querySelector('h5');
-
-        if(circle1.style.marginLeft == "0px"){
-            button1.style.backgroundColor = "rgb(199, 190, 190)";
-            circle1.style.marginLeft = "70px";
-            troca.innerHTML = "Chat";
-            troca.style.color = "black";
-        }else{
-            button1.style.backgroundColor = "rgb(44, 44, 44)";
-            circle1.style.marginLeft = "0px";
-            troca.innerHTML = "Lorem";
-            troca.style.color = "whitesmoke";
-        }
+        ButtonTroca(button1,circle1,h5_2,"Chat","Lorem");
     }// FIM DA TROCA DE COR DO BUTTON, ANIMAÇÃO DO CIRCLO E TROCA DE LOREM POR CHAT
 
     {// INICIO DA TROCA DO TEXTO DO LOREM PELO O TEXTO DO CHAT
         let titulo = texto.querySelector('h1');
         let paragrafo = texto.querySelector('p');
-        let circle2 = document.getElementById('circle2');
 
         if(texto.style.animationName == ""){
             texto.style.animationName = "troca";
@@ -181,8 +173,6 @@ button1.addEventListener('click',()=>{
         buttons.forEach(element =>{
             element.style.animationName = "reload";
         });
-
-        let button2 = document.getElementById('button2');
 
         button1.classList.add('disable');
         button2.classList.add('disable');
@@ -211,24 +201,9 @@ button1.addEventListener('click',()=>{
     }// FIM DA TROCA DE TEXTO DO LOREM PELO O TEXTO DO CHAT 
 });// FIM DO BUTTON 1
 
-let button2 = document.getElementById('button2');
-let circle2 = document.getElementById('circle2');
-
 button2.addEventListener('click',()=>{
     {// INICIO DA TROCA DE COR DO BUTTON, ANIMAÇÃO DO CIRCLO E TROCA DE COM POR SEM 
-        let remocao = button2.querySelector('h5');
-
-        if(circle2.style.marginLeft == "0px"){
-            button2.style.backgroundColor = "rgb(199, 190, 190)";
-            circle2.style.marginLeft = "70px";
-            remocao.innerHTML = "Sem";
-            remocao.style.color = "black";
-        }else{
-            button2.style.backgroundColor = "rgb(44, 44, 44)";
-            circle2.style.marginLeft = "0px";
-            remocao.innerHTML = "Com";
-            remocao.style.color = "whitesmoke";
-        }
+        ButtonTroca(button2,circle2,h5_3,"Sem","Com");
     }// FIM DA TROCA DE COR DO BUTTON, ANIMAÇÃO DOR CIRCLO E TROCA DE COM POR SEM 
 
     {// INICIO DA REMOÇÃO DO TEXTO
