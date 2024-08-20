@@ -1,0 +1,178 @@
+#config{
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    transition: 1s;
+    position: relative;
+}
+
+#config > h1{
+    position: relative;
+    margin: 20px 0 10px 40px;
+}
+
+#config > h4{
+    min-width: 100px;
+    position: absolute;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#config > h4:nth-of-type(1){
+    min-width: 80px;
+    max-width: 80px;
+    margin-top: 28px;
+}
+
+#config > h4:nth-of-type(2){
+    min-width: 84px;
+    max-width: 84px;
+}
+
+#config > h4:nth-of-type(3){
+    font-size: 14px;
+    margin-top: 28px;
+    margin-left: 7px;
+}
+
+.button{
+    width: 100px;
+    height: 30px;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    animation-duration: 3s;
+}
+
+.button:nth-of-type(1){
+    margin-left: 93px;
+}
+
+#button1{
+    margin-left: 98px;
+}
+
+#button2{
+    margin-left: 108px;
+}
+
+.button > h5{
+    position: absolute;
+    left: 33px;
+    top: 8px;
+    transition-property: color;
+    transition-duration: 0.4s;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: wheat;
+    border-radius: 100px;
+    transition-property: margin-left;
+    transition-duration: 0.3s;
+}
+
+input[type="color"] {
+    border: 3px solid whitesmoke;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+#selecionarCor{
+    position: relative;
+    margin: 10px 10px 0 10px ;
+}
+
+.cores{
+    margin-top: 20px;
+    margin-left: 27px;
+}
+
+.cores:nth-of-type(2), .cores:nth-of-type(3){
+    margin-left: 20px;
+}
+
+#selecionarCor > h4{
+    margin-top: 15px;
+}
+
+.container-pre{
+    width: 40px;
+    height: 25px;
+    background-color: #B87333;
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 3px solid whitesmoke;
+}
+
+.container-pre:nth-of-type(2), .container-pre:nth-of-type(3){
+    margin-left: 25px;
+}
+
+.pre:nth-of-type(1){
+    width: 35%;
+    height: 100%;
+    background-color: #4CAF50;
+}
+
+.container-pre:nth-of-type(2){
+    background-color: #FF007F;
+}
+
+.container-pre:nth-of-type(2) > .pre{
+    background-color: #d52dff;
+}
+
+.container-pre:nth-of-type(3){
+    background-color:  #C0C0C0;
+}
+
+.container-pre:nth-of-type(3) > .pre{
+    background-color: #2986dd;
+}
+
+.disable{
+    pointer-events: none;
+}
+
+@keyframes reload{
+    0%{
+        opacity: 0.1;
+    }
+
+    25%{
+        opacity: 0.3;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    75%{
+        opacity: 0.8;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}

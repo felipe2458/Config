@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+#conteudo{
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    transition: 1s;
+}
+
+#abrirConfig{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../Images/settings-glyph-black-icon-png_293809-removebg-preview\ \(1\).png);
+    background-size: 30px;
+    cursor: pointer;
+    margin: 1.5%;
+    transition: 0.4s;
+}
+
+#abrirConfig:hover{
+    filter: drop-shadow(1px 1px 8px rgb(21, 255, 0));
+}
+
+#texto{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: 1s;
+    animation-duration: 2s;
+}
+
+#texto > h1{
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+#texto > p{
+    text-align: justify;
+    padding: 0 3%;
+}
+
+@keyframes troca{
+    0%{
+        transform: translate(-50%,-50%);
+    }
+
+    50%{
+        transform: translate(-50%,-50%) rotateY(180deg);
+        opacity: 0;
+    }
+
+    75%{
+        transform: translate(-50%,-50%) rotateY(180deg);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translate(-50%,-50%) rotateY(360deg);
+    }
+}
+
+@keyframes remover{
+    0%{
+        transform: translate(-50%,-50%) scale(1);
+    }
+
+    50%{
+        transform: translate(-50%,-50%) scale(8) rotate(180deg);
+    }
+
+    100%{
+        transform: translate(-50%,-50%) scale(0) rotate(-360deg);
+    }
+}
+
+@keyframes adicionar{
+    0%{
+        transform: translate(-50%,-50%) scale(0);
+    }
+
+    50%{
+        transform: translate(-50%,-50%) scale(8) rotateZ(180deg);
+    }
+
+    100%{
+        transform: translate(-50%,-50%) scale(1) rotateZ(360deg);
+    }
+}
