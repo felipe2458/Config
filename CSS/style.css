@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Minha fonte";
+}
+
+@font-face {
+    font-family: "Minha fonte";
+    src: url(../Fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+html,body{
+    height: 100%;
+    background: linear-gradient(59deg,green,blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.abriConfig{
+    width: 30px;
+    height: 30px;
+    background-image: url(../Images/settings-glyph-black-icon-png_293809-removebg-preview\ \(1\).png);
+    background-size: 30px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.conteudo{
+    height: 100%;
+    float: left;
+    transition: 1s;
+}
+
+.conteudo > .container-texto{
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.container-texto > h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.container-texto > p{
+    text-align: justify;
+    padding: 0 20px;
+}
+
+.texto{
+    color: whitesmoke;
+    transition: s;
+}
+
+.config{
+    height: 100%;
+    transition: s;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+    transition: 1s;
+}
+
+.config > h1{
+    position: absolute;
+    left: 40px;
+    top: 30px;
+}
+
+.config > h4{
+    position: absolute;
+    left: 10px;
+    top: 115px;
+    min-width: 100px;
+}
+
+.config > h4:nth-of-type(2){
+    top: 180px;
+    font-size: 14px;
+}
+
+.config > h4:nth-of-type(3){
+    top: 240px;
+    font-size: 14px;
+}
+
+.config > .button{
+    width: 100px;
+    height: 30px;
+    position: relative;
+    top: 110px;
+    left: 100px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.config > .button:nth-of-type(2){
+    top: 145px;
+}
+
+.config > .button:nth-of-type(3){
+    top: 175px;
+}
+
+.button > h5{
+    position: absolute;
+    left: 33px;
+    top: 6px;
+    transition: 0.2s;
+}
+
+.button > .circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    transition: 0.2s;
+}
