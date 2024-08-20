@@ -3,48 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="autor" content="Felipe Alves">
-    <link rel="stylesheet" href="CSS/config.css">
-    <link rel="stylesheet" href="CSS/conteudo.css">
-    <title>Configurações com meno linhas</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Config</title>
 </head>
 <body>
-    <div id="config" style="background-color: darkred; width: 0px;">
-        <h1>Configurações</h1>
+    <section id="config">
+        <div id="container-titulo-config">
+            <h1>Configurações</h1>
+        </div><!-- container-titulo-config -->
 
-        <h4>Cor da tela:</h4>
+        <div id="container-responsi">
+            <div class="container-button" id="primeiro">
+                <div class="separar">
+                    <div class="button">
+                        <h5 style="color: whitesmoke;">Padrão</h5>
+                        <div class="circle" style="margin-left: 0px;"></div>
+                    </div><!-- button -->
+                </div><!-- separar -->
+    
+                <div class="separar"><h4 class="no-quebrar">Cor da tela:</h4></div>
+            </div><!-- container-button -->
+    
+            <div id="container-selecao-cores"></div><!-- container-selecao-cores -->
+    
+            <div class="container-button" id="segundo">
+                <div class="separar">
+                    <div class="button reload">
+                        <h5 style="color: whitesmoke;">Lorem</h5>
+                        <div class="circle" style="margin-left: 0px;"></div>
+                    </div><!-- button -->
+                </div><!-- separar -->
+    
+                <div class="separar"><h4 class="menor no-quebrar">Troca de Texto:</h4></div><!-- separar -->
+            </div><!-- container-button -->
+    
+            <div class="container-button" id="terceiro">
+                <div class="separar">
+                    <div class="button reload">
+                        <h5 style="color: whitesmoke;">Com</h5>
+                        <div class="circle" style="margin-left: 0px;"></div>
+                    </div><!-- button -->
+                </div><!-- separar -->
+    
+                <div class="separar"><h4 class="menor no-quebrar">Remover Texto:</h4></div><!-- separar -->
+            </div><!-- container-button -->
+        </div><!-- container-responsivo -->
 
-        <div id="button" class="button" style="background-color: rgb(44, 44 ,44); margin-top: 32px;">
-            <h5 id="h5-1" style="color: whitesmoke;">Padrão</h5>  
-            <div id="circle" class="circle" style="margin-left: 0px;"></div>
-        </div><!--button-->
+    </section>
 
-        <div id="selecionarCor" style="height: 0px; width: 250px;"></div><!--selecionarCor-->
-
-        <h4 id="troca" style="margin-top: 17px;">Trocar texto:</h4>
-
-        <div id="button1" class="button reload" style="background-color: rgb(44, 44 ,44); margin-top: 20px;">
-            <h5 id="h5-2" style="color: whitesmoke;">Lorem</h5>
-            <div id="circle1" class="circle" style="margin-left: 0px;"></div>
-        </div><!--button1-->
-
-        <h4>Remover Texto:</h4>
-
-        <div id="button2" class="button reload" style="background-color: rgb(44, 44 ,44); margin-top: 20px;">
-            <h5 id="h5-3" style="color: whitesmoke;">Com</h5>
-            <div id="circle2" class="circle" style="margin-left: 0px;"></div>
-        </div><!--button2-->
-    </div><!--config-->
-
-    <div id="conteudo" style="background-color: rgb(44, 44 ,44); width: 100%;">
+    <section id="conteudo">
         <div id="abrirConfig"></div>
 
-        <div id="texto" style="color: whitesmoke;">
-            <h1>Lorem</h1>
+        <div id="texto">
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id ipsum neque. Suspendisse at sollicitudin massa. Mauris vitae diam ex. Sed ut orci eu velit ultricies posuere. Nulla facilisi. In quis consectetur lacus. Quisque congue quam vel eleifend sollicitudin. Vestibulum euismod ullamcorper erat vel varius. Cras egestas gravida neque at aliquam. In consequat erat non diam aliquam sagittis. Nam risus nisi, finibus id tortor eget, tristique rhoncus tortor. Ut ut dui id ipsum volutpat sagittis. Curabitur hendrerit interdum sapien. Quisque sagittis quam vitae lacus dapibus ornare. Maecenas vestibulum tellus non ligula lacinia fringilla vestibulum id felis.Quisque elementum leo in tellus porttitor cursus. In eget arcu ut massa tincidunt tincidunt eu nec nulla. Nam quis feugiat enim. Cras pulvinar nec erat non pulvinar. Nunc vel nunc molestie, blandit purus non, imperdiet lorem. Sed vitae ex eu turpis luctus ullamcorper. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut augue dolor, convallis id urna ut, elementum rutrum libero. Donec cursus nisi eget dolor sollicitudin, sed rhoncus odio vehicula. Mauris id tortor tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum lorem quis molestie placerat. In a congue mauris. Nam non tristique risus.Proin iaculis elit ex, in consequat arcu molestie in. Phasellus elementum odio dui, nec cursus sapien finibus sed. Sed condimentum elit enim, ut euismod dolor scelerisque eu. Sed sit amet lorem dui. Phasellus porta ex et arcu rhoncus facilisis eu et metus. Sed eu nisi sodales, rhoncus neque sit amet, consectetur risus. Cras tellus odio, varius quis posuere quis, dapibus ut ligula. In hac habitasse platea dictumst. Proin aliquet augue eget diam elementum faucibus.</p>
-        </div><!--texto-->
-    </div><!--conteudo-->
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elit ex, viverra et tincidunt sed, tempor non ligula. Nam efficitur sapien at molestie sagittis. Cras eleifend fringilla interdum. Maecenas suscipit mauris nisl, et congue orci feugiat et. Praesent dapibus, ipsum vitae pellentesque tempor, mauris ex tempor ante, in suscipit velit nibh et nibh. Vivamus pretium, arcu interdum maximus luctus, lacus justo aliquam quam, vel maximus magna urna ac dui. Suspendisse rutrum dui sit amet sollicitudin accumsan. Sed non congue felis, sed lacinia elit. Nunc est mi, ullamcorper ac ex ut, sagittis vehicula eros. Cras et dignissim mauris, at cursus lorem. Integer ornare scelerisque tortor, ut rhoncus velit iaculis hendrerit. Donec a pharetra turpis. Nullam pellentesque justo pretium nunc euismod gravida. Suspendisse a lobortis tellus.Integer ac urna ac odio ultrices convallis in nec eros. Pellentesque dapibus efficitur ultrices. Praesent et elit non ex molestie consectetur. Vestibulum tincidunt ac tellus sed mattis. Nam nec ex odio. Aliquam vulputate, orci eu vestibulum iaculis, lectus justo blandit tortor, vel volutpat nulla dui id eros. Proin a justo dolor. Vivamus a eros egestas, lacinia turpis vel, consequat turpis. Aliquam tristique massa vitae tincidunt mollis. Cras eleifend, libero vel euismod egestas, justo turpis blandit enim, id gravida ligula nunc at turpis.</p>
+        </div><!-- texto -->
+
+    </section>
 </body>
-<script src="SCRIPT/script.js"></script>
+<script src="JS/script.js"></script>
 </html>
