@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans",sans-serif;
 }
 
 html,body{
@@ -213,7 +213,7 @@ input[type="color"]::-webkit-color-swatch {
 
 #abrirConfig{
     margin: 20px;
-    background-image: url(../images/settings-glyph-black-icon-png_293809-removebg-preview\ \(1\).png);
+    background-image: url(../images/config.png);
     background-size: cover;
     width: 30px;
     height: 30px;

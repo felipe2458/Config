@@ -20,7 +20,7 @@ window.addEventListener("resize", function(){
     clearTimeout(interval);
 
     interval = setTimeout(()=>{
-        window.location.href = "file:///C:/Users/Felipe/OneDrive/Área%20de%20Trabalho/ProjetoConfig/index.html";
+        window.location.href = "https://felipe2458.github.io/Config/";
     }, 100);
 });
 
