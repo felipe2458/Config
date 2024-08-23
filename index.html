@@ -3,64 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Config</title>
 </head>
 <body>
     <section id="config">
-        <div id="container-titulo-config">
-            <h1>Configurações</h1>
-        </div><!-- container-titulo-config -->
+        <div class="config-wraper">
+            <div class="titulo-wraper">
+                <h1>configurações</h1>
+            </div><!-- titulo-wraper -->
 
-        <div id="container-responsi">
-            <div class="container-button" id="primeiro">
-                <div class="separar">
-                    <div class="button">
-                        <h5 style="color: whitesmoke;">Padrão</h5>
-                        <div class="circle" style="margin-left: 0px;"></div>
-                    </div><!-- button -->
-                </div><!-- separar -->
-    
-                <div class="separar"><h4 class="no-quebrar">Cor da tela:</h4></div>
-            </div><!-- container-button -->
-    
-            <div id="container-selecao-cores"></div><!-- container-selecao-cores -->
-    
-            <div class="container-button" id="segundo">
-                <div class="separar">
-                    <div class="button reload">
-                        <h5 style="color: whitesmoke;">Lorem</h5>
-                        <div class="circle" style="margin-left: 0px;"></div>
-                    </div><!-- button -->
-                </div><!-- separar -->
-    
-                <div class="separar"><h4 class="menor no-quebrar">Troca de Texto:</h4></div><!-- separar -->
-            </div><!-- container-button -->
-    
-            <div class="container-button" id="terceiro">
-                <div class="separar">
-                    <div class="button reload">
-                        <h5 style="color: whitesmoke;">Com</h5>
-                        <div class="circle" style="margin-left: 0px;"></div>
-                    </div><!-- button -->
-                </div><!-- separar -->
-    
-                <div class="separar"><h4 class="menor no-quebrar">Remover Texto:</h4></div><!-- separar -->
-            </div><!-- container-button -->
-        </div><!-- container-responsivo -->
+            <div class="container-buttons">
+                <div class="button-wraper-single">
+                    <div class="separar">
+                        <h4>Cor da tela:</h4>
+                    </div><!-- separar -->
 
-    </section>
+                    <div class="separar">
+                        <div class="button">
+                            <h5>Padrão</h5>
+                            <div class="circle"></div>
+                        </div><!-- button -->
+                    </div><!-- separar -->
+                </div><!-- button-wraper-single -->
+
+                <div class="container-selc-cor" id="selecCor">
+                    <div class="container-inputs">
+                        <div class="inputs-wraper">
+                            <input type="color" value="#8b0000" id="corConfig">
+                            <input type="color" value="#2c2c2c" id="corConteudo">
+                            <input type="color" value="#F5F5F5" id="corTexto">
+                        </div><!-- inputs-wraper -->
+                    </div><!-- container-inpust -->
+
+                    <div class="container-pre">
+                        <div class="titulo-pre">
+                            <h4>Pre-definidos:</h4>
+                        </div><!-- titulo-pre -->
+
+                        <div class="pre-wraper">
+                            <div class="preConteudo" style="background-color: #B87333;">
+                                <div class="preConfig" style="background-color: #4CAF50;"></div><!-- preConfig -->
+                                <div class="preTexto-wraper">
+                                    <div class="preTexto" style="background-color: #f5f5f5;"></div><!-- preTexto -->
+                                </div><!-- preTexto-wraper -->
+                            </div><!-- preConteudo -->
+
+                            <div class="preConteudo" style="background-color: #FF007F;">
+                                <div class="preConfig" style="background-color: #d52dff;"></div><!-- preConfig -->
+                                <div class="preTexto-wraper">
+                                    <div class="preTexto" style="background-color: #f5f5f5;"></div><!-- preTexto -->
+                                </div><!-- preTexto-wraper -->
+                            </div><!-- preConteudo -->
+
+                            <div class="preConteudo" style="background-color: #C0C0C0;">
+                                <div class="preConfig" style="background-color: #2986dd;"></div><!-- preConfig -->
+                                <div class="preTexto-wraper">
+                                    <div class="preTexto" style="background-color: #000000;"></div><!-- preTexto -->
+                                </div><!-- preTexto-wraper -->
+                            </div><!-- preConteudo -->
+                        </div><!-- pre-wraper -->
+
+                    </div><!-- container-pre -->
+
+                </div><!-- container-pre -->
+
+                <div class="button-wraper-single">
+                    <div class="separar">
+                        <h4>Troca de Texto:</h4>
+                    </div><!-- separar -->
+
+                    <div class="separar">
+                        <div class="button addR">
+                            <h5>Lorem</h5>
+                            <div class="circle"></div>
+                        </div><!-- button -->
+                    </div><!-- separar -->
+                </div><!-- button-wraper-single -->
+
+                <div class="button-wraper-single">
+                    <div class="separar">
+                        <h4>Remover Texto:</h4>
+                    </div><!-- separar -->
+
+                    <div class="separar">
+                        <div class="button addR">
+                            <h5>Com</h5>
+                            <div class="circle"></div>
+                        </div><!-- button -->
+                    </div><!-- separar -->
+                </div><!-- button-wraper-single -->
+            </div><!-- container-buttons -->
+
+            <div class="clear"></div><!-- clear -->
+
+        </div><!-- config-wraper -->
+    </section><!-- config -->
 
     <section id="conteudo">
-        <div id="abrirConfig"></div>
+        <div id="abrirConfig"></div><!-- abrirConfig -->
 
-        <div id="texto">
+        <div class="texto-wraper">
+            <div class="texto" id="texto">
+                <h1 class="lorem">Lorem</h1>
+                <h1 class="chat">Chat</h1>
 
-            <h1>Lorem</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elit ex, viverra et tincidunt sed, tempor non ligula. Nam efficitur sapien at molestie sagittis. Cras eleifend fringilla interdum. Maecenas suscipit mauris nisl, et congue orci feugiat et. Praesent dapibus, ipsum vitae pellentesque tempor, mauris ex tempor ante, in suscipit velit nibh et nibh. Vivamus pretium, arcu interdum maximus luctus, lacus justo aliquam quam, vel maximus magna urna ac dui. Suspendisse rutrum dui sit amet sollicitudin accumsan. Sed non congue felis, sed lacinia elit. Nunc est mi, ullamcorper ac ex ut, sagittis vehicula eros. Cras et dignissim mauris, at cursus lorem. Integer ornare scelerisque tortor, ut rhoncus velit iaculis hendrerit. Donec a pharetra turpis. Nullam pellentesque justo pretium nunc euismod gravida. Suspendisse a lobortis tellus.Integer ac urna ac odio ultrices convallis in nec eros. Pellentesque dapibus efficitur ultrices. Praesent et elit non ex molestie consectetur. Vestibulum tincidunt ac tellus sed mattis. Nam nec ex odio. Aliquam vulputate, orci eu vestibulum iaculis, lectus justo blandit tortor, vel volutpat nulla dui id eros. Proin a justo dolor. Vivamus a eros egestas, lacinia turpis vel, consequat turpis. Aliquam tristique massa vitae tincidunt mollis. Cras eleifend, libero vel euismod egestas, justo turpis blandit enim, id gravida ligula nunc at turpis.</p>
-        </div><!-- texto -->
+                <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elit ex, viverra et tincidunt sed, tempor non ligula. Nam efficitur sapien at molestie sagittis. Cras eleifend fringilla interdum. Maecenas suscipit mauris nisl, et congue orci feugiat et. Praesent dapibus, ipsum vitae pellentesque tempor, mauris ex tempor ante, in suscipit velit nibh et nibh. Vivamus pretium, arcu interdum maximus luctus, lacus justo aliquam quam, vel maximus magna urna ac dui. Suspendisse rutrum dui sit amet sollicitudin accumsan. Sed non congue felis, sed lacinia elit. Nunc est mi, ullamcorper ac ex ut, sagittis vehicula eros. Cras et dignissim mauris, at cursus lorem. Integer ornare scelerisque tortor, ut rhoncus velit iaculis hendrerit. Donec a pharetra turpis. Nullam pellentesque justo pretium nunc euismod gravida. Suspendisse a lobortis tellus.Integer ac urna ac odio ultrices convallis in nec eros. Pellentesque dapibus efficitur ultrices. Praesent et elit non ex molestie consectetur. Vestibulum tincidunt ac tellus sed mattis. Nam nec ex odio. Aliquam vulputate, orci eu vestibulum iaculis, lectus justo blandit tortor, vel volutpat nulla dui id eros. Proin a justo dolor. Vivamus a eros egestas, lacinia turpis vel, consequat turpis. Aliquam tristique massa vitae tincidunt mollis. Cras eleifend, libero vel euismod egestas, justo turpis blandit enim, id gravida ligula nunc at turpis.</p>
+                <p class="chat">Era uma vez, em uma pequena aldeia, um jovem chamado João. João era conhecido por sua curiosidade insaciável e por sua habilidade de resolver problemas. Certo dia, ele encontrou um mapa antigo enquanto explorava o sótão da casa de seu avô. O mapa indicava a localização de um tesouro escondido nas profundezas da floresta.Determinando-se a encontrar o tesouro, João preparou sua mochila com provisões e partiu logo ao amanhecer. A floresta era densa e cheia de perigos, mas sua determinação era maior do que qualquer medo. Ele seguiu as indicações do mapa, atravessando rios, escalando colinas e enfrentando animais selvagens.Após dias de jornada, ele finalmente chegou a uma caverna oculta. Com a ajuda de uma tocha, entrou na caverna e encontrou um baú antigo. Ao abri-lo, seus olhos brilharam ao ver o tesouro: moedas de ouro, joias preciosas e um pergaminho com instruções para ajudar sua aldeia a prosperar.João voltou à aldeia como um herói. Com o tesouro, ele ajudou a construir escolas, hospitais e infraestruturas que melhoraram a vida de todos. Sua coragem e determinação ficaram gravadas na história da aldeia, inspirando futuras gerações a seguir seus passos.</p>
+            </div><!-- texto -->
+        </div><!-- texto-wraper -->
 
-    </section>
+    </section><!-- conteudo-->
 </body>
 <script src="JS/script.js"></script>
 </html>
